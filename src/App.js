@@ -4,7 +4,13 @@ import './App.css';
 
 import $ from "jquery";
 import 'jquery-ui/themes/base/resizable.css';
-import 'jquery-ui/ui/widgets/resizable';
+
+window.jQuery = $;
+require('jquery-ui/ui/version');
+require('jquery-ui/ui/plugin');
+require('jquery-ui/ui/widget');
+require('jquery-ui/ui/widgets/mouse');
+require('jquery-ui/ui/widgets/resizable');
 
 class App extends Component {
     componentDidMount(){
